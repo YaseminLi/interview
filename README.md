@@ -18,6 +18,8 @@
 3. 数组哪些API是纯函数
 4. slice和splice的区别
 5. [10,20,30].map(parseInt)的返回结果
+6. 手写数组flatern,考虑多层级
+7. 数组去重
 
 ## 函数
 1. call和apply的区别
