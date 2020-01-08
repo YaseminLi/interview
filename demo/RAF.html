@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RAF</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    下方长方形的宽度不断增加：
+    <div id="box">hello</div>
+</body>
+<script>
+
+    let box = document.getElementById('box')
+    let curWidth = 100
+    const maxWidth = 640
+
+    //setTimeout
+    //60帧/s 3s180帧 100-640 每次变化3px
+    // function animate(params) {
+    //     if (curWidth === maxWidth) {
+    //         return
+    //     }
+    //     curWidth += 3
+    //     box.style.width = `${curWidth}px`
+    //     setTimeout(() => {
+    //         animate()
+    //     }, 16.7)//要自己控制时间
+    // }
+    // animate()
+
+    //requestAnimationFrame
+    function animate(params) {
+        if (curWidth === maxWidth) {
+            return
+        }
+        curWidth += 3
+        box.style.width = `${curWidth}px`
+        window.requestAnimationFrame(animate)
+    }
+    animate()
+</script>
+
+</html>
