@@ -60,7 +60,8 @@
 2. 将url参数解析为JS对象
 
 ## 动画
-1. 介绍一下RAF requestAnimationFrame
+1. 实现动画的方式
+2. 介绍一下RAF requestAnimationFrame
 
 ## 性能优化
 1. 前端性能如何优化，一般从哪几个方面考虑

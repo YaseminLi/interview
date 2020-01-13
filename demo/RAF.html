@@ -27,27 +27,28 @@
 
     //setTimeout
     //60帧/s 3s180帧 100-640 每次变化3px
+    function animate(params) {
+        if (curWidth === maxWidth) {
+            return
+        }
+        curWidth += 3
+        console.log(curWidth)
+        box.style.width = `${curWidth}px`
+        setTimeout(() => {
+            animate()
+        }, 16.7)//要自己控制时间
+    }
+    // animate()
+
+    //requestAnimationFrame
     // function animate(params) {
     //     if (curWidth === maxWidth) {
     //         return
     //     }
     //     curWidth += 3
     //     box.style.width = `${curWidth}px`
-    //     setTimeout(() => {
-    //         animate()
-    //     }, 16.7)//要自己控制时间
+    //     window.requestAnimationFrame(animate)//不需要自己控制时间
     // }
-    // animate()
-
-    //requestAnimationFrame
-    function animate(params) {
-        if (curWidth === maxWidth) {
-            return
-        }
-        curWidth += 3
-        box.style.width = `${curWidth}px`
-        window.requestAnimationFrame(animate)
-    }
     animate()
 </script>
 

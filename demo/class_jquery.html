@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>一段文字 1</p>
+    <p>一段文字 2</p>
+    <p>一段文字 3</p>
+</body>
+<script>
+    
+    class Jquery{
+        constructor(selector){
+            const result=document.querySelectorAll(selector)
+            const length=result.length
+            for(let i=0;i<length;i++){
+                this[i]=result[i]
+            }
+            this.length=length
+        }
+        get(index){
+            return this[index]
+        }
+        each(fn){
+            for(let i=0;i<this.length;i++){
+                const el=this[i]
+                fn(el)
+            }
+        }
+        on(type,fn){
+           return this.each(el=>{
+               el.addEventListener(type,fn,false)
+           })
+        }
+    }
+    const $p=new Jquery('p')
+
+    // $p.get(1)
+    // $p.each(el=>console.log(el.nodeName))
+    // $p.on('click',()=>{alert('clicked')})
+</script>
+</html>
