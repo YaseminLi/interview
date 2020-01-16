@@ -14,35 +14,23 @@ const bondle={
 
 
 Function.prototype.bindCopy=function () {
-    let self=this
+    
+    //将参数解析为数组
     arguments=Array.prototype.slice.call(arguments)
-    //arguments[0] :新函数的this
-    //arguments[1]……:传入到新函数的参数
-    const newThis=arguments[0]
-    const args=arguments.slice(1)
-    return function (newThis,args) {
-        return self.apply(newThis,args)
+    //获取this
+    const newThis=arguments.shift()
+    //当前函数
+    const self=this
+    return function () {
+        return self.apply(newThis,arguments)
     }
 }
 modle.getX() //1
 
 let bondleGet=modle.getX.bindCopy(bondle)
 
-// bondleGet() //2
+bondleGet() //2
 
 //bind的实现
 
 
-function f1() {
-    let a1=1
-    function f2() {
-        let a2=10
-        function f3() {
-            let a3=100
-            return a1+a2+a3 
-        }
-        return f3()
-    }
-   return f2()
-}
-console.log(f1())
