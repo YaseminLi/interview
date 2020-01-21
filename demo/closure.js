@@ -19,3 +19,20 @@ function x() {
 let b=400
 let y=x()
 y()//99
+
+//闭包的实际应用
+function cache() {
+    let list={}
+    return {
+        get:function (key) {
+            return list[key]
+        },
+        set:function (key,value) {
+            list[key]=value
+        }
+    }
+}
+let cacheList=cache()
+cacheList.set('xiaoming',98)
+let result=cacheList.get('xiaoming')
+console.log(result);//98
