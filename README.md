@@ -41,6 +41,9 @@
 3. 手写一个简易的ajax
 4. 跨域的常用实现方式
 
+## 存储
+1. 描述cookie localStorage sessionStorage之间的区别
+
 ## 事件
 1. 事件代理（委托）是什么？
 
@@ -81,6 +84,10 @@
 2. 手写用promise加载一张图片
 3. 前端使用异步的场景有哪些？
 4. 异步和单线程的关系
+
+## 运行环境
+1. 从输入url到渲染出页面的过程
+2. window.onLoad和DOMContentLoad的区别
 
 ## 动画
 1. 实现动画的方式
