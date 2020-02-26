@@ -1,4 +1,6 @@
-参考：[前端JS面试](https://coding.imooc.com/learn/list/115.html)    自己整理的[前端知识体系](https://www.processon.com/view/link/5e358818e4b05b335ff8d4eb)
+参考：[前端JS面试](https://coding.imooc.com/learn/list/115.html)    [前端面试题集锦](https://fe.padding.me/#/questions/1)
+
+自己整理的[前端知识体系](https://www.processon.com/view/link/5e358818e4b05b335ff8d4eb)
 
 ## 变量类型
 1. var const let 的区别
@@ -118,3 +120,70 @@
 
 ## 性能优化
 1. 前端性能如何优化，一般从哪几个方面考虑
+
+## css
+1.  CSS 属性是否区分大小写？
+2. 行内(inline)元素 设置margin-top和margin-bottom 是否起作用？
+3. 对内联元素(inline)设置padding-top和padding-bottom是否会增加它的高度？
+4.  设置p的font-size:10rem，当用户重置或拖曳浏览器窗口时，文本大小是否会也随着变化？
+5. 伪类选择器:checked将作用与input类型为radio或者checkbox,不会作用于option。
+6. translate()方法能移动一个元素在z轴上的位置？
+7. 在HTML文本中，伪类:root总是指向html元素？
+8.  如下代码中文本“Sausage”的颜色是?
+9. #example位置如何变化：
+  ```html
+  <p id="example">Hello</p>
+  #example {margin-bottom: -5px;margin-left: -5px;}
+  ```
+10. mypic.jpg 会被浏览器加载吗？
+    ```html
+    <div id="test1">
+        <span id="test2"></span>
+    </div>
+    #test2 {
+        background-image: url('mypic.jpg');
+        display: none;
+    }
+    ```
+11. 当下列的HTML代码加载时会触发新的HTTP请求吗？
+    ```html
+    <div style="display: none;">
+        <img src="mypic.jpg" alt="My photo">
+    </div>
+    ```
+12. 当下列的HTML代码加载时会触发新的HTTP请求吗？
+
+```<img src="mypic.jpg" style="visibility: hidden" alt="My picture">```
+
+13. mypic.jpg 会被浏览器加载吗？
+  ```html
+  <div id="test1">
+      <span id="test2"></span>
+  </div>
+  #test1 {
+      display: none;
+  }
+  #test2 {
+      background-image: url('mypic.jpg');
+      visibility: hidden;
+  }
+  ```
+14. display:none 和visibilty:hidden的区别
+15. 描述下 “reset” CSS 文件的作用和使用它的好处。
+16. screen关键词是指设备物理屏幕的大小还是指浏览器的视窗？
+17. 你对flex的理解？
+18. em\px\rem区别？
+19. 有哪些方式（CSS）可以隐藏页面元素？
+20. CSS选择器的优先级是怎样的？
+21. link和@import的区别？
+22. 块级元素水平居中的方法？
+23. CSS有几种定位方式？
+24. 如何理解z-index？
+25. 你对css sprites的理解，好处是什么？
+26. 关于CSS的动画与过渡问题
+27. 伪类和伪元素的区别是什么？
+28. 为什么有时候人们用translate来改变位置而不是定位？。
+29. only 选择器的作用是？
+
+    @media only screen and (max-width: 1024px) {argin: 0;}
+30. 谈谈对BFC的理解
