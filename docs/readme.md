@@ -112,7 +112,16 @@
 
 ## 运行环境
 1. 从输入url到渲染出页面的过程
-2. window.onLoad和DOMContentLoad的区别
+2. css为什么要放在head中？
+3. js为什么放在body最后
+4. script标签中defer和async的区别？
+5. window.onLoad和DOMContentLoad的区别
+6. 请解释一下 JavaScript 的同源策略。
+7. 在Paragraph 1加载后main2.css才会被加载编译吗？
+8. main1.css一定会在alert('Hello world')前被加载和编译吗?
+9. 在main2.css获取前main1一定必须被下载解析吗？
+10. 什么是 "use strict"; ? 使用它的好处和坏处分别是什么？
+11. html文件加载css,js文件的顺序，怎么异步加载？
 
 ## 动画
 1. 实现动画的方式

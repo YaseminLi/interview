@@ -13,6 +13,7 @@ module.exports = {
         // ],
         sidebar: [
             ['/', '题目汇总'],
+            ['/collection/html.md', 'html'],
             ['/collection/css.md', 'css'],
             ['/collection/变量类型与计算.md', '变量类型与计算'],
             ['/collection/动画.md', '动画'],
