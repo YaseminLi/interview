@@ -89,7 +89,13 @@ data-为前端开发者提供自定义的属性，这些属性集可以通过对
 
 ## HTML5与HTML4的不同之处
 - 文件类型声明（<!DOCTYPE>）仅有一型：<!DOCTYPE HTML>。
-- 新的元素：section, video, progress, nav, meter, time, aside, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, mark, output, rp, rt, ruby, source, summary, wbr。
+- 新的元素：
+	- audio 音频播放 playing pause ended autoplay loop
+	- video 视频播放 属性方法基本同audio
+	- source 给audio、video定义媒介资源
+	- section 片段、章节，可包裹h1、p等
+    - progress 进度条，value_已经完成了多少，max_一共多少
+	- section, video, progress, nav, meter, time, aside, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, mark, output, rp, rt, ruby, source, summary, wbr。
 - input元素的新类型：date, email, url等等。
 - 新的属性：ping（用于a与area）, charset（用于meta）, async（用于script）。
 - 全域属性（所有HTML元素共有的属性）：id, tabindex, repeat。

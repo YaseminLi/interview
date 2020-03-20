@@ -19,6 +19,9 @@
 1. 手写字符串的trim方法，考虑浏览器的兼容性
 2. 获取随机数，要求是长度一致的字符串格式
 
+## Date
+1. 下面代码运行会有什么问题？
+
 ## 数组
 1. pop push unshift shift分别做什么
 2. split（）和join（）区别
@@ -208,3 +211,4 @@
 
     @media only screen and (max-width: 1024px) {argin: 0;}
 30. 谈谈对BFC的理解
+31. 关于盒模型

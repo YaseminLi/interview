@@ -241,3 +241,9 @@ BFC触发条件:
 作用：
 - 防止margin重叠
 - 防止元素塌陷
+
+## 关于盒模型
+- 外边距（margin）、边框（border）、内边距（padding）、实际内容（content）四个属性。
+- 在标准盒模型下，width是指实际内容宽度；
+- 在怪异盒模型下（IE）,width=内容宽度+边框宽+内边距宽；
+- ```box-sizing``` 属性可以指定盒子类型 ```box-sizing：content-box```标准 ```box-sizing：border-box```怪异

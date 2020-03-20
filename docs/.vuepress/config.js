@@ -32,6 +32,7 @@ module.exports = {
             ['/collection/优化.md', '优化'],
             ['/collection/正则表达式.md', '正则表达式'],
             ['/collection/字符串.md', '字符串'],
+            ['/collection/Date.md', 'Date'],
             ['/collection/作用域和闭包.md', '作用域和闭包'],
             ['/collection/BOM.md', 'BOM'],
             ['/collection/DOM.md', 'DOM'],
