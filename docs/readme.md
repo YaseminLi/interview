@@ -75,6 +75,16 @@
 ## 事件
 1. 事件代理（委托）是什么？
 
+## promise
+1. Promise的三种状态
+2. 实现下面这个函数
+```js
+    logMessage(3000).then(() => {
+        console.log('3秒后才打印');
+    })
+```
+3. Promise链式调用
+
 ## DOM操作和优化
 1. 如何阻止事件冒泡和默认行为
 2. DOM常用的API
