@@ -222,3 +222,4 @@
     @media only screen and (max-width: 1024px) {argin: 0;}
 30. 谈谈对BFC的理解
 31. 关于盒模型
+32. hover、active、focus这几种伪类被激活的元素

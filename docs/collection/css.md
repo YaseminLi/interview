@@ -247,3 +247,6 @@ BFC触发条件:
 - 在标准盒模型下，width是指实际内容宽度；
 - 在怪异盒模型下（IE）,width=内容宽度+边框宽+内边距宽；
 - ```box-sizing``` 属性可以指定盒子类型 ```box-sizing：content-box```标准 ```box-sizing：border-box```怪异
+
+## hover、active、focus这几种伪类被激活的元素
+这三个执行的顺序是：hover-active-focus，但在写css样式时，active需要放在最后，不然会被覆盖
