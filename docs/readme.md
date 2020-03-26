@@ -61,6 +61,25 @@
 7. 解释下变量提升？
 8. 以下的执行结果
 
+## 原型和原型链
+1. new Object()和Object.create()的区别
+2. 下面函数的执行结果
+```js
+	function People() {
+	    var name = '小明'
+	    this.changeName = function (newName) {
+	        name = newName
+	    }
+	    this.sayHello = function () {
+	        console.log(name)
+	    }
+	}
+	let xiaoming=new People()
+	console.log(xiaoming.name)
+	xiaoming.changeName('dahong')
+	xiaoming.sayHello()
+```
+
 
 ## 数据请求
 1. ajax请求中get和post的区别
@@ -84,6 +103,7 @@
     })
 ```
 3. Promise链式调用
+4. aixos和var for循环结合的输出结果
 
 ## DOM操作和优化
 1. 如何阻止事件冒泡和默认行为
@@ -223,3 +243,11 @@
 30. 谈谈对BFC的理解
 31. 关于盒模型
 32. hover、active、focus这几种伪类被激活的元素
+
+
+vue
+1. vue常用的修饰符
+2. vue常用的指令
+3. vue的生命周期及常做什么事情
+4. 计算属性、watch和方法的区别
+5. vue组件间如何通信

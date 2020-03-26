@@ -36,7 +36,8 @@ module.exports = {
             ['/collection/作用域和闭包.md', '作用域和闭包'],
             ['/collection/BOM.md', 'BOM'],
             ['/collection/DOM.md', 'DOM'],
-            ['/collection/json.md', 'json']
+            ['/collection/json.md', 'json'],
+            ['/collection/vue.md', 'vue']
         ]
     }
 }

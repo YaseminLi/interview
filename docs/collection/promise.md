@@ -40,3 +40,20 @@ logMessage(3000).then(() => {
 	    console.log(num);//5
 	})
 ```	
+
+## aixos和var for循环结合的输出结果
+```js
+	for (var i = 0; i < 10; i++) {
+	  axios({
+	    method: 'post',
+	    url: '/base/post',
+	    data: {
+	      a: 1,
+	      b: 2
+	    }
+	  }).then(()=> {
+	    console.log(i);
+	  })
+	}
+```
+- then方法会放在micro-task中执行，输出10个10
